@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Durmanovvv: Исходный файл D:/Durmanovv2/mycomplex.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Durmanovvv
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9492dab764042963a8b1071ddc4a155f.html">Durmanovv2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mycomplex.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mycomplex_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _MY_COMPLEX_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _MY_COMPLEX_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_complex.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_complex.html">Complex</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; <span class="keywordtype">double</span> Re;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keywordtype">double</span> Im; </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_complex.html">Complex</a>(<span class="keywordtype">double</span> aRe=0, <span class="keywordtype">double</span> aIm=0);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_complex.html">Complex</a>(<span class="keyword">const</span> <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ~<a class="code" href="class_complex.html">Complex</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> Set(<span class="keywordtype">double</span> aRe, <span class="keywordtype">double</span> aIm=0);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">operator</span> double();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">double</span> abs();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">friend</span> istream&amp; <a class="code" href="mycomplex_8cpp.html#aeedb4b3ee8333727ed8f9ed8bd5f9150">operator &gt;&gt;</a>(istream&amp;, <a class="code" href="class_complex.html">Complex</a>&amp;) ; </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">friend</span> ostream&amp; <a class="code" href="mycomplex_8cpp.html#ab1d0763e50ed6df4dc2f6fbceddf727f">operator &lt;&lt;</a>(ostream&amp;, <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#a4b1807e2221e04ba8661276644a7eacb">operator +</a>(<span class="keyword">const</span> <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#ad9363d22ed922d55de7e817eddf90ec0">operator -</a>(<span class="keyword">const</span> <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#a4b1807e2221e04ba8661276644a7eacb">operator +</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">friend</span>  <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#a4b1807e2221e04ba8661276644a7eacb">operator +</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;, <span class="keyword">const</span> <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#ad9363d22ed922d55de7e817eddf90ec0">operator -</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#ad9363d22ed922d55de7e817eddf90ec0">operator -</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;, <span class="keyword">const</span> <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#a2518193c907c8db8fe5920468f8d6771">operator *</a>(<span class="keyword">const</span> <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#a2518193c907c8db8fe5920468f8d6771">operator *</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">friend</span> <a class="code" href="class_complex.html">Complex</a> <a class="code" href="mycomplex_8cpp.html#a2518193c907c8db8fe5920468f8d6771">operator *</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;, <span class="keyword">const</span> <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_complex.html">Complex</a> operator /(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_complex.html">Complex</a>&amp; operator +=(сonst <a class="code" href="class_complex.html">Complex</a>&amp;);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Complex&amp; operator -=(<span class="keyword">const</span> Complex&amp;);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Complex&amp; operator *=(<span class="keyword">const</span> Complex&amp;);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Complex&amp; operator +=(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Complex&amp; operator -=(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Complex&amp; operator *=(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Complex&amp; operator /=(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Complex&amp; operator =(<span class="keyword">const</span> Complex&amp;);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Complex&amp; operator =(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp;);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="mycomplex_8cpp_html_ab1d0763e50ed6df4dc2f6fbceddf727f"><div class="ttname"><a href="mycomplex_8cpp.html#ab1d0763e50ed6df4dc2f6fbceddf727f">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;stream, Complex &amp;a)</div><div class="ttdoc">Оператор вывода данных </div><div class="ttdef"><b>Definition:</b> <a href="mycomplex_8cpp_source.html#l00233">mycomplex.cpp:233</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="mycomplex_8cpp_html_aeedb4b3ee8333727ed8f9ed8bd5f9150"><div class="ttname"><a href="mycomplex_8cpp.html#aeedb4b3ee8333727ed8f9ed8bd5f9150">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(iostream &amp;stream, Complex &amp;a)</div><div class="ttdoc">Оператор ввода данных </div><div class="ttdef"><b>Definition:</b> <a href="mycomplex_8cpp_source.html#l00224">mycomplex.cpp:224</a></div></div>
+<div class="ttc" id="mycomplex_8cpp_html_a2518193c907c8db8fe5920468f8d6771"><div class="ttname"><a href="mycomplex_8cpp.html#a2518193c907c8db8fe5920468f8d6771">operator*</a></div><div class="ttdeci">Complex operator*(const double &amp;aLval, const Complex &amp;a)</div><div class="ttdoc">Возвращает произведение aLval, a.Re и aLval * a.Im соответственно r.*. </div><div class="ttdef"><b>Definition:</b> <a href="mycomplex_8cpp_source.html#l00267">mycomplex.cpp:267</a></div></div>
+<div class="ttc" id="class_complex_html"><div class="ttname"><a href="class_complex.html">Complex</a></div><div class="ttdoc">Класс комплексного числа </div><div class="ttdef"><b>Definition:</b> <a href="mycomplex_8h_source.html#l00010">mycomplex.h:10</a></div></div>
+<div class="ttc" id="mycomplex_8cpp_html_ad9363d22ed922d55de7e817eddf90ec0"><div class="ttname"><a href="mycomplex_8cpp.html#ad9363d22ed922d55de7e817eddf90ec0">operator-</a></div><div class="ttdeci">Complex operator-(const double &amp;aLval, const Complex &amp;aRval)</div><div class="ttdoc">Возвращает разность aLval, aRval.Re и отрицательную переменную -aRval.Im в result.*. </div><div class="ttdef"><b>Definition:</b> <a href="mycomplex_8cpp_source.html#l00256">mycomplex.cpp:256</a></div></div>
+<div class="ttc" id="mycomplex_8cpp_html_a4b1807e2221e04ba8661276644a7eacb"><div class="ttname"><a href="mycomplex_8cpp.html#a4b1807e2221e04ba8661276644a7eacb">operator+</a></div><div class="ttdeci">Complex operator+(const double &amp;aLval, const Complex &amp;aRval)</div><div class="ttdoc">Возвращает переменной Result.* сумму aLval, aRval.Re и значение aRval.Im соответ. ...</div><div class="ttdef"><b>Definition:</b> <a href="mycomplex_8cpp_source.html#l00245">mycomplex.cpp:245</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
